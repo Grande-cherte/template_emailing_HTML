@@ -1,0 +1,1223 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>HTML Email</title>
+    <style type="text/css" media="screen">
+        @media (max-width:600px),
+        (max-device-width:600px) {
+            .table-body {
+                width: 100% !important;
+                min-width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .two-collumn-card td {
+                width: 100% !important;
+            }
+
+            .space-w {
+                width: 20px !important;
+            }
+
+            .image-main {
+                min-width: 100% !important;
+                width: 100% !important;
+                height: auto;
+            }
+
+            .title-main {
+                text-align: center;
+            }
+
+            .banner .content-banner td {
+                display: block;
+                text-align: center !important;
+                width: 100%;
+            }
+
+            .image-cadeaux {
+                width: 100% !important;
+                min-width: 100%;
+                margin-bottom: 15px !important;
+            }
+
+            .aside {
+                width: 100%;
+            }
+
+            .aside td {
+                display: block;
+                width: 100% !important;
+            }
+
+            .footer tr td {
+                display: block;
+            }
+
+            .btn-infos {
+                float: none !important;
+                margin: auto !important;
+                padding-top: 20px;
+            }
+
+            .td-link {
+                width: 100% !important;
+            }
+
+            .td-icon {
+                width: 100%;
+            }
+
+            .instagram,
+            .facebook,
+            .td-link {
+                text-align: center !important;
+            }
+
+            .space-height {
+                height: 0px !important;
+            }
+
+            .two-collumn-card td {
+                display: block !important;
+                width: 100%;
+            }
+
+            .card {
+                min-width: 100% !important;
+                width: 100%;
+                margin-bottom: 10px;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+
+            .img-card {
+                width: 100% !important;
+                max-width: 100% !important;
+                min-width: 100% !important;
+                height: auto !important;
+            }
+
+            .space-h-card {
+                height: 0px !important;
+            }
+        }
+
+        @media(max-width:490px) {
+            .title-para-aside {
+                font-size: 18px !important;
+            }
+
+            .sous-title-para-aside {
+                font-size: 18px !important;
+            }
+
+            .title-banner {
+                font-size: 22px !important;
+            }
+
+            .p-banner {
+                font-size: 18px !important;
+            }
+        }
+
+        @media(max-width:360px) {
+            .body {
+                font-size: 8px !important;
+            }
+
+            .title-banner {
+                font-size: 20px !important;
+            }
+
+            .title-para-aside,
+            .p-banner,
+            .sous-title-para-aside {
+                font-size: 16px !important;
+            }
+        }
+
+        .body {
+            padding: 0 !important;
+            margin: 0 !important;
+            display: block !important;
+            min-width: 100% !important;
+            width: 100% !important;
+            font-family: 'Inter', Helvetica, Arial, sans-serif !important;
+            font-size: 12px;
+            font-size: 12px;
+            -webkit-text-size-adjust: none
+        }
+
+        .table-body {
+            width: 100% !important;
+            min-width: 665px;
+            max-width: 665px;
+        }
+
+        img {
+            display: block;
+            border: 0;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        table {
+            border-spacing: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        table tr td {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #000;
+        }
+
+        .space-header {
+            height: 20px !important;
+        }
+
+        .logo_header {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+        }
+
+        .image-main {
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
+        }
+
+        .space-w {
+            width: 20px !important;
+        }
+
+        .space-w-card {
+            width: 40px !important;
+        }
+
+        .space-h-card {
+            height: 40px;
+        }
+
+        .img-card {
+            width: 100% !important;
+            max-width: 260px !important;
+        }
+
+        .para-card {
+            min-height: 70px;
+        }
+
+        .title-banner {
+            font-size: 28px;
+        }
+
+        .p-banner {
+            font-size: 26px;
+        }
+    </style>
+</head>
+
+<body class="body" border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#CCCCCC" style="margin:0px;padding:0px;text-align:
+    left;width:100%;background-color:#CCC">
+    <center width="100%" style="width:100%;">
+        <table width="665" align="center" bgcolor="#ffffff" style="width: 100%;max-width: 665px;min-width: 665px;"
+            border="0" cellspacing="0" cellpadding="0" class="table-body">
+            <tr>
+                <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="header" bgcolor="#00000"
+                        style="background-color: #000;">
+                        <tr>
+                            <td>
+                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                    <tr>
+                                        <td style="font-size:0pt; line-height:0pt; text-align:left" height="20"
+                                            style="height:20px;" class="space-header"></td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <a href="javascript:void(0);" target="_blank"><img
+                                            src="https://user-images.githubusercontent.com/57986793/146968139-75a5584b-b089-4ada-81c2-24dc1002a9e1.png"
+                                            width="200" style="margin: auto;" class="logo_header" alt="logo header">
+                                    </a>
+                                </div>
+                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                    <tr>
+                                        <td style="font-size:0pt; line-height:0pt; text-align:left" height="20"
+                                            style="height:20px;" class="space-header"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="image-intro">
+                        <tr>
+                            <td>
+                                <a href="javascript:void(0);" target="_blank">
+                                    <img class="image-main" border="0" width="100%" style="width:100%; height:auto;"
+                                        src="https://user-images.githubusercontent.com/57986793/146968133-227bd7fb-4c5f-46ba-b5b9-7b3025d44f94.jpg"
+                                        border="0" alt="image">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td class="space-w"
+                                            style="font-size:0pt; line-height:0pt; text-align:left;width:20px;"
+                                            width="20">
+                                        </td>
+                                        <td>
+                                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                <tr>
+                                                    <td height="20"
+                                                        style="font-size:0pt; line-height:0pt; text-align:left"
+                                                        style="height:20px;" class="space-header">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                class="title">
+                                                <tr>
+                                                    <td>
+                                                        <span class="titre-green" style="color: rgb(68, 123, 71);
+                                                                font-weight: 900;
+                                                                font-size: 24px;">Les Animations</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="sous-titre-green" style="font-size: 24px;
+                                                                font-weight: 500;">De notre
+                                                            centre</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                <tr>
+                                                    <td height="20"
+                                                        style="font-size:0pt; line-height:0pt; text-align:left"
+                                                        style="height:20px;" class="space-header">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table class="two-collumn-card" border="0" cellspacing="0" cellpadding="0"
+                                                width="100%">
+                                                <tr>
+                                                    <td width="300" style="width: 300px;">
+                                                        <table width="100%" class="card" bgcolor="#EACB6C"
+                                                            style="background-image:linear-gradient(0deg, rgba(193,159,79,1) 0%, rgba(237,212,94,1)100%);"
+                                                            border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td>
+                                                                    <table border="0" cellspacing="0" cellpadding="0"
+                                                                        width="100%">
+                                                                        <tr>
+                                                                            <td height="15px"
+                                                                                style="height: 15px;font-size:0pt; line-height:0pt; text-align:left"
+                                                                                class="space-h"></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="15" class="space-w"
+                                                                    style="width: 15px!important;font-size:0pt; line-height:0pt; text-align:left">
+                                                                </td>
+                                                                <td>
+                                                                    <table border="0" cellspacing="0" cellpadding="0"
+                                                                        width="100%">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div
+                                                                                                style="font-size:0pt; line-height:0pt; text-align:left">
+                                                                                                <div
+                                                                                                    style="text-align: center;">
+                                                                                                    <a href="javascript:void(0);"
+                                                                                                        target="_blank">
+                                                                                                        <img class="img-card"
+                                                                                                            src="https://user-images.githubusercontent.com/57986793/146968127-204bc2ab-54c2-407d-858a-530f33f217e9.jpg"
+                                                                                                            width="260"
+                                                                                                            style="width:260px;"
+                                                                                                            alt="image1">
+                                                                                                    </a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr height="10">
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%"
+                                                                                    style="min-height: 55px;">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="title-card"
+                                                                                                style="font-size:13px;text-align:left;font-weight:900 ;text-transform: uppercase;line-height:20px;">
+                                                                                                ANIMATÎON
+                                                                                                TRAÎNEAU</div>
+                                                                                            <div class="sous-title"
+                                                                                                style="font-size:13px; line-height:normal; text-align:left;font-weight: 600;font-style: italic;">
+                                                                                                Tous les jours
+                                                                                                ouvrables</div>
+                                                                                            <div class="sous-title"
+                                                                                                style="font-size:13px; line-height:normal; text-align:left;font-weight: 600;font-style: normal;">
+                                                                                                du 1er
+                                                                                                au
+                                                                                                31
+                                                                                                décembre
+                                                                                                2021</div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td height="20"></td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="para-card"
+                                                                                                style="line-height:17px;font-size: 11px; text-align:left;font-weight:600">
+                                                                                                Les enfants vont
+                                                                                                pouvoir
+                                                                                                embraquer à
+                                                                                                bord du
+                                                                                                traineau de
+                                                                                                pére
+                                                                                                Noél et se
+                                                                                                balader dans
+                                                                                                un paysage
+                                                                                                féerique.Le
+                                                                                                réve!</div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table width="100%" border="0"
+                                                                                    cellspacing="0" cellpadding="0"
+                                                                                    style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">
+                                                                                    <tr>
+                                                                                        <td height="15"
+                                                                                            style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">
+                                                                                            &nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                target="_blank"><img
+                                                                                                    src="https://user-images.githubusercontent.com/57986793/146968122-80d8af18-67a4-4356-92a4-4f933afc1441.png"
+                                                                                                    alt="btn infos"
+                                                                                                    class="btn-card"
+                                                                                                    width="80"
+                                                                                                    style="width: 80px;height: auto;"></a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td width="15" style="width: 15px!important;"
+                                                                    class="space-w"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <table border="0" cellspacing="0" cellpadding="0"
+                                                                        width="100%">
+                                                                        <tr>
+                                                                            <td height="15px" style="height: 15px;"
+                                                                                class="space-h"></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class="space-w-card"></td>
+                                                    <td>
+                                                    <td width="300" style="width:300px;">
+                                                        <table bgcolor="#EACB6C"
+                                                            style="background-image:linear-gradient(0deg, rgba(193,159,79,1) 0%, rgba(237,212,94,1)100%);"
+                                                            class="card" border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td>
+                                                                    <table border="0" cellspacing="0" cellpadding="0"
+                                                                        width="100%">
+                                                                        <tr>
+                                                                            <td height="15px" style="height: 15px;"
+                                                                                class="space-h"></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="15" style="width: 15px!important;"
+                                                                    class="space-w"></td>
+                                                                <td>
+                                                                    <table border="0" cellspacing="0" cellpadding="0"
+                                                                        width="100%">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div
+                                                                                                style="font-size:0pt; line-height:0pt; text-align:left">
+                                                                                                <div
+                                                                                                    style="text-align: center;">
+                                                                                                    <a href="javascript:void(0);"
+                                                                                                        target="_blank"><img
+                                                                                                            class="img-card"
+                                                                                                            src="https://user-images.githubusercontent.com/57986793/146968128-88b2a194-c84c-4cad-ac3e-38e89193cd49.jpg"
+                                                                                                            width="260"
+                                                                                                            style="width:260px;"
+                                                                                                            alt="image2"></a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr height="10">
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table style="min-height: 55px;"
+                                                                                    border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="title-card"
+                                                                                                style="font-size:13px;text-align:left;font-weight:900 ;text-transform: uppercase;line-height:20px;">
+                                                                                                PÈRE NOËL</div>
+                                                                                            <div class="sous-title"
+                                                                                                style="font-size:13px; line-height:normal; text-align:left;font-weight: 600;font-style: italic;">
+                                                                                                5 jours dans le
+                                                                                                mois
+                                                                                                !</div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td height="20"></td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="para-card"
+                                                                                                style="line-height:17px;font-size: 11px; text-align:left;font-weight:600">
+                                                                                                Comme chaque
+                                                                                                année et
+                                                                                                pour
+                                                                                                le plus grand
+                                                                                                plaisir des
+                                                                                                enfants, le
+                                                                                                pére Noél sera
+                                                                                                présent à
+                                                                                                plusieur
+                                                                                                dates dans le
+                                                                                                centre.Ce
+                                                                                                sera
+                                                                                                l'occation de
+                                                                                                faire
+                                                                                                une belle photo
+                                                                                                souvenir
+                                                                                                !</div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table width="100%" border="0"
+                                                                                    cellspacing="0" cellpadding="0"
+                                                                                    style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">
+                                                                                    <tr>
+                                                                                        <td height="15"
+                                                                                            style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">
+                                                                                            &nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                target="_blank"><img
+                                                                                                    src="https://user-images.githubusercontent.com/57986793/146968122-80d8af18-67a4-4356-92a4-4f933afc1441.png"
+                                                                                                    alt="btn infos"
+                                                                                                    class="btn-card"
+                                                                                                    width="80"
+                                                                                                    style="width: 80px;height: auto;"></a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td width="15" style="width: 15px!important;"
+                                                                    class="space-w"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <table border="0" cellspacing="0" cellpadding="0"
+                                                                        width="100%">
+                                                                        <tr>
+                                                                            <td height="15px" style="height: 15px;"
+                                                                                class="space-h"></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                <tr>
+                                                    <td height="40"
+                                                        style="font-size:0pt; line-height:0pt; text-align:left"
+                                                        style="height:40px;" class="space-h-card">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table class="two-collumn-card" border="0" cellspacing="0" cellpadding="0"
+                                                width="100%">
+                                                <tr>
+                                                    <td width="300" style="width: 300px;">
+                                                        <table width="100%" class="card" bgcolor="#EACB6C"
+                                                            style="background-image:linear-gradient(0deg, rgba(193,159,79,1) 0%, rgba(237,212,94,1)100%);"
+                                                            border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td>
+                                                                    <table border="0" cellspacing="0" cellpadding="0"
+                                                                        width="100%">
+                                                                        <tr>
+                                                                            <td height="15px" style="height: 15px;"
+                                                                                class="space-h"></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="15" style="width: 15px!important;"
+                                                                    class="space-w"></td>
+                                                                <td>
+                                                                    <table border="0" cellspacing="0" cellpadding="0"
+                                                                        width="100%">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div
+                                                                                                style="font-size:0pt; line-height:0pt; text-align:left">
+                                                                                                <div
+                                                                                                    style="text-align: center;">
+                                                                                                    <a href="javascript:void(0);"
+                                                                                                        target="_blank">
+                                                                                                        <img class="img-card"
+                                                                                                            src="https://user-images.githubusercontent.com/57986793/146968129-32a4a1b2-b2e1-4d7c-a746-97aacd1f83f9.jpg"
+                                                                                                            width="260"
+                                                                                                            style="width:260px;"
+                                                                                                            alt="image3">
+                                                                                                    </a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr height="10">
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table style="min-height: 55px;"
+                                                                                    border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="title-card"
+                                                                                                style="font-size:13px;text-align:left;font-weight:900 ;text-transform: uppercase;line-height:20px;">
+                                                                                                DÉFILÉ DES
+                                                                                                MASCOTTES
+                                                                                                DE
+                                                                                                NOËL</div>
+                                                                                            <div class="sous-title"
+                                                                                                style="font-size:13px; line-height:normal; text-align:left;font-weight: 600;font-style: italic;">
+                                                                                                3 jours dans le
+                                                                                                mois
+                                                                                                !</div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td height="20"></td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="para-card"
+                                                                                                style="line-height:17px;font-size: 11px; text-align:left;font-weight:600">
+                                                                                                Les mascottes de
+                                                                                                Noel
+                                                                                                reviennent cette
+                                                                                                année
+                                                                                                pour ce
+                                                                                                parades
+                                                                                                endiiablées à
+                                                                                                travers le
+                                                                                                centre!
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table width="100%" border="0"
+                                                                                    cellspacing="0" cellpadding="0"
+                                                                                    style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">
+                                                                                    <tr>
+                                                                                        <td height="15"
+                                                                                            style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">
+                                                                                            &nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                target="_blank"><img
+                                                                                                    src="https://user-images.githubusercontent.com/57986793/146968122-80d8af18-67a4-4356-92a4-4f933afc1441.png"
+                                                                                                    alt="btn infos"
+                                                                                                    class="btn-card"
+                                                                                                    width="80"
+                                                                                                    style="width: 80px;height: auto;"></a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td width="15" style="width: 15px!important;"
+                                                                    class="space-w"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <table border="0" cellspacing="0" cellpadding="0"
+                                                                        width="100%">
+                                                                        <tr>
+                                                                            <td height="15px" style="height: 15px;"
+                                                                                class="space-h"></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class="space-w-card"></td>
+                                                    <td>
+                                                    <td width="300" style="width:300px;">
+                                                        <table bgcolor="#EACB6C"
+                                                            style="background-image:linear-gradient(0deg, rgba(193,159,79,1) 0%, rgba(237,212,94,1)100%);"
+                                                            class="card" border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td>
+                                                                    <table border="0" cellspacing="0" cellpadding="0"
+                                                                        width="100%">
+                                                                        <tr>
+                                                                            <td height="15px" style="height: 15px;"
+                                                                                class="space-h"></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td width="15" style="width: 15px!important;"
+                                                                    class="space-w"></td>
+                                                                <td>
+                                                                    <table border="0" cellspacing="0" cellpadding="0"
+                                                                        width="100%">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div
+                                                                                                style="font-size:0pt; line-height:0pt; text-align:left">
+                                                                                                <div
+                                                                                                    style="text-align: center;">
+                                                                                                    <a href="javascript:void(0);"
+                                                                                                        target="_blank"><img
+                                                                                                            class="img-card"
+                                                                                                            src="https://user-images.githubusercontent.com/57986793/146968130-e1973481-c900-438f-86ca-495ef59b1d4d.jpg"
+                                                                                                            width="260"
+                                                                                                            style="width:260px;"
+                                                                                                            alt="image4"></a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr height="10">
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table style="min-height: 55px;"
+                                                                                    border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="title-card"
+                                                                                                style="font-size:13px;text-align:left;font-weight:900 ;text-transform: uppercase;line-height:20px;">
+                                                                                                CHAMINOU</div>
+                                                                                            <div class="sous-title"
+                                                                                                style="font-size:13px; line-height:normal; text-align:left;font-weight: 600;font-style: italic;">
+                                                                                                5 jours dans le
+                                                                                                mois
+                                                                                                !</div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td height="20"></td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div class="para-card"
+                                                                                                style="line-height:17px;font-size: 11px; text-align:left;font-weight:600">
+                                                                                                Chaminou viendra
+                                                                                                lui
+                                                                                                aussi
+                                                                                                égayer cette
+                                                                                                période
+                                                                                                festive,
+                                                                                                en
+                                                                                                chair et en
+                                                                                                poils roses!
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table width="100%" border="0"
+                                                                                    cellspacing="0" cellpadding="0"
+                                                                                    style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">
+                                                                                    <tr>
+                                                                                        <td height="15"
+                                                                                            style="font-size:0pt; line-height:0pt; text-align:center; width:100%; min-width:100%">
+                                                                                            &nbsp;</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0"
+                                                                                    cellpadding="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <a href="javascript:void(0);"
+                                                                                                target="_blank"><img
+                                                                                                    src="https://user-images.githubusercontent.com/57986793/146968122-80d8af18-67a4-4356-92a4-4f933afc1441.png"
+                                                                                                    alt="btn infos"
+                                                                                                    class="btn-card"
+                                                                                                    width="80"
+                                                                                                    style="width: 80px;height: auto;"></a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td width="15" style="width: 15px!important;"
+                                                                    class="space-w"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <table border="0" cellspacing="0" cellpadding="0"
+                                                                        width="100%">
+                                                                        <tr>
+                                                                            <td height="15px" style="height: 15px;"
+                                                                                class="space-h"></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                <tr>
+                                                    <td height="40"
+                                                        style="height:40px;font-size:0pt; line-height:0pt; text-align:left"
+                                                        class="space-separate-aside">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table border="0" cellspacing="0" cellpadding="0" width="100%"
+                                                class="aside">
+                                                <tr>
+                                                    <td class="td-img-cadeux"
+                                                        style="font-size:0pt; line-height:0pt; text-align:left;width:200px;"
+                                                        valign="top" width="200">
+                                                        <table border="0" cellspacing="0" cellpadding="0" width="100%"
+                                                            style="font-size:0pt; line-height:0pt; text-align:left">
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="javascript:void(0);" target="_blank"><img
+                                                                            src="https://user-images.githubusercontent.com/57986793/146968132-3e4de977-5cfb-440f-a792-1c4ea291eb50.jpg"
+                                                                            class="image-cadeaux" width="200"
+                                                                            style="width:100%;max-width: 200px;"
+                                                                            border="0" alt="image-cadeaux"></a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td width="30"
+                                                        style="width: 30px;font-size:0pt; line-height:0pt; text-align:left">
+                                                    </td>
+                                                    <td>
+                                                        <table border="0" cellspacing="0" cellpadding="0" width="100%"
+                                                            class="text-aside">
+                                                            <tr>
+                                                                <td class="td-para-aside" style="vertical-align: top;">
+                                                                    <span class="title-para-aside" style="color: rgb(227, 0, 63);
+                                                                    font-size: 28px;
+                                                                    font-weight: 700;">
+                                                                        Un service d`emballage
+                                                                    </span><br>
+                                                                    <span class="sous-title-para-aside" style="font-size: 28px;
+                                                                    font-weight: 400;">
+                                                                        cadeaux vous est offert !
+                                                                    </span>
+                                                                    <p class="p-aside"
+                                                                        style="font-weight: 700;line-height: 22px;">
+                                                                        Vendredi 17 décembre 2021 :
+                                                                        <span
+                                                                            style="font-weight: 400;">13h00-19:00</span><br>
+                                                                        Samedi 18 décembre 2021 :
+                                                                        <span
+                                                                            style="font-weight: 400;">13h00-19:00</span><br>
+                                                                        Lundi 20 décembre 2021 :
+                                                                        <span
+                                                                            style="font-weight: 400;">13h00-19:00</span><br>
+                                                                        Mercredi 22 décembre 2021 :
+                                                                        <span
+                                                                            style="font-weight: 400;">13h00-19:00</span><br>
+                                                                        Jeudi 23 décembre 2021 :
+                                                                        <span
+                                                                            style="font-weight: 400;">13h00-19:00</span><br>
+                                                                        Vendredi 24 décembre 2021 :
+                                                                        <span
+                                                                            style="font-weight: 400;">10h00-16:30</span><br>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                <tr>
+                                                    <td height="40"
+                                                        style="height:40px;font-size:0pt; line-height:0pt; text-align:left"
+                                                        class="space-separate-aside">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="space-w" style="font-size:0pt; line-height:0pt; text-align:left;width:20px;"
+                                width="20">
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="banner"
+                        style="min-width:100%!important;background: rgba(193,159,79,1);background: linear-gradient(0deg, rgba(193,159,79,1) 0%, rgba(237,212,94,1) 100%);"
+                        bgColor="#D0B155">
+                        <tr>
+                            <td class="space-w" style="font-size:0pt; line-height:0pt; text-align:left;width:20px;"
+                                width="20">
+                            </td>
+                            <td>
+                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                    <tr>
+                                        <td style="font-size:0pt; line-height:0pt; text-align:left" height="20"
+                                            style="height:20px;" class="space-header"></td>
+                                    </tr>
+                                </table>
+                                <table class="content-banner" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                    <tr>
+                                        <td class="class=" text-banner"">
+                                            <p>
+                                                <span class="title-banner"
+                                                    style="
+                                                font-size: 28px;line-height:30px; text-align:left; font-weight:bold">Les horaires
+                                                    spéciaux</span><br>
+                                                <span class="p-banner"
+                                                    style="font-family:Arial; font-size:26px; line-height:30px; text-align:left; font-weight:400">Du
+                                                    centre Métropole
+                                                    Lausanne</span>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <table border="0" cellspacing="0" cellpadding="0" width="100%"
+                                                class="btn-banner">
+                                                <tr>
+                                                    <td style="float: right;vertical-align: middle;">
+                                                        <a href="javascript:void(0);" target="_blank"><img
+                                                                src="https://user-images.githubusercontent.com/57986793/146961584-37bdbf98-1f7a-4bf4-8968-a99fc49eefb2.png"
+                                                                class="btn-infos" width="150" height="auto"
+                                                                alt="botton infos"></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                    <tr>
+                                        <td style="font-size:0pt; line-height:0pt; text-align:left" height="20"
+                                            style="height:20px;" class="space-header"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="space-w" style="font-size:0pt; line-height:0pt; text-align:left;width:20px;"
+                                width="20">
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" style="min-width:100%!important;" border="0" cellspacing="0" cellpadding="0"
+                        bgColor="#0000" class="footer"
+                        style="background-color:#000!important; text-align:center!important;">
+                        <tr>
+                            <td colspan="8">
+                                <table width="100%">
+                                    <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                    style="text-align:center!important;">
+                                    <tr>
+                                        <td width="20"
+                                            style="font-size:0pt; line-height:0pt; padding:0; margin:0;Margin:0">
+                                        </td>
+                                        <td class="td-logofooter">
+                                            <a href="javascript:void(0);" target="_blank"><img
+                                                    src="https://user-images.githubusercontent.com/57986793/146968136-82c8ce4f-25aa-438e-b77a-952e918d96ca.png"
+                                                    class="logo-footer" style="margin: auto;" width="150" height="50"
+                                                    alt="logo footer">
+                                            </a>
+                                        </td>
+                                        <td class="td-link" style="text-align:right;">
+                                            <a href="javascript:void(0);" target="_blank" class="instagram-link" style="color: rgb(221, 209, 187);
+                                                font-weight: 700;
+                                                margin: 0px 5px;">mymetropole</a>
+                                        </td>
+                                        <td class="td-icon instagram" width="30" style="text-align:left;">
+                                            <img src="https://user-images.githubusercontent.com/57986793/146961592-444e423d-6e59-49ad-86ef-a4491b653908.png"
+                                                class="icon" style="max-width: 15px;width: 15px;
+                                                height: auto;display: inline-block !important;" width="20"
+                                                alt="instagram">
+                                        </td>
+                                        <td class="td-sitelink">
+                                            <a href="javascript:void(0);" target="_blank" class="site-link" style="color: rgb(230, 0, 126);
+                                                font-weight: 700;
+                                                letter-spacing: 1.5px;">www.mymetropole.ch</a>
+                                        </td>
+                                        <td class="td-icon facebook" width="30" style="text-align:right;">
+                                            <img src="https://user-images.githubusercontent.com/57986793/146961588-bb05a8bc-9746-4064-90e5-611dc3926e22.png"
+                                                alt="facebook" class="icon" style="max-width: 15px;
+                                                width: 15px;
+                                                height: auto;
+                                                display: inline-block !important;" width="20">
+                                        </td>
+                                        <td class="td-link" style="text-align:left;"><a href="javascript:void(0);"
+                                                target="_blank" class="facebook-link" style="color: rgb(221, 209, 187);
+                                                font-weight: 700;
+                                                margin: 0px 5px;">mymetropole</a>
+                                        </td>
+                                        <td width="20"
+                                            style="font-size:0pt; line-height:0pt; padding:0; margin:0;Margin:0">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td height="10"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="20" style="font-size:0pt; line-height:0pt; padding:0; margin:0;Margin:0">
+                            </td>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td>
+                                            <p class="para-footer" style="color: rgb(221, 209, 187);
+                                            text-align: center;
+                                            padding: 10px 20px;">Vous avez reçu cet email en tant que
+                                                client du centre commercial
+                                                Metropole Lausanne,<br> ayant participé à un concours et
+                                                accepté de recevoir des
+                                                informations par mail du centre commercial.Si vous désirez
+                                                ne plus recevoir
+                                                d'emails, cliquez <a href="javascript:void(0);" class="click-ici" style="text-decoration: underline;
+                                                    color: rgb(221, 209, 187);">ici</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="20" style="font-size:0pt; line-height:0pt; padding:0; margin:0;Margin:0">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="10">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td height="20"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>

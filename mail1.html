@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>~MESSAGE.SUBJECT~</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,700&display=swap"
+    rel="stylesheet">
+  <style>
+    /* Main CSS */
+    @media (prefers-color-scheme: dark) {
+
+      .title,
+      .text-para,
+      .text {
+        color: #0064a9 !important;
+      }
+    }
+
+    html,
+    body {
+      cursor: default;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: none;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #4a4a49;
+      text-align: center;
+      font-family: 'Lato', Futura, 'Trebuchet MS', Arial, sans-serif;
+      font-size: 16px;
+      width: 100%;
+      display: table;
+    }
+
+    a {
+      font-family: 'Lato', Futura, 'Trebuchet MS', Arial, sans-serif !important;
+    }
+
+    sup {
+      vertical-align: middle;
+      margin-top: -5px;
+      display: inline-block;
+    }
+
+    /* General table */
+    table {
+      border-collapse: collapse;
+      border-spacing: 0px;
+      width: 800px;
+      margin: auto;
+      padding: 0px;
+    }
+
+    td {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    td.leftColumn,
+    td.rightColumn {
+      width: 60px;
+    }
+
+    /* Header table */
+    .headerTable td {
+      width: 33%;
+    }
+
+    /* Top links table */
+    .headerLinks {
+      padding: 0px 0px 10px;
+    }
+
+    .headerLinks td {
+      width: 19%;
+      text-align: center;
+      padding: 10px 0px 5px;
+    }
+
+    .headerLinks td a.headerLink {
+      text-decoration: none;
+      color: #4a4a4a;
+      font-family: 'Lato', 'Trebuchet MS', Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    .headerLinks td.spacer {
+      width: 8%;
+      padding: 10px 0px 5px;
+      font-family: 'Lato', 'Trebuchet MS', Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    /* Main content table */
+    .mainContentTable img {
+      display: block;
+    }
+
+    /* Footer tables */
+    .footerTable {
+      background-color: #eeeeee;
+      background: #eeeeee;
+    }
+
+    .footerTable .footerLink {
+      font-family: 'Lato', 'Trebuchet MS', Arial, sans-serif;
+      text-decoration: none;
+      color: #4a4a4a;
+      font-size: 14px;
+      padding-left: 5px;
+      padding-right: 5px;
+      font-weight: 900;
+    }
+
+    .footerTable .contactTable {
+      width: 63%;
+    }
+
+    .footerTable .footNote {
+      font-family: 'Lato', Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      color: #4a4a4a;
+      padding-left: 15px;
+      padding-right: 15px;
+      line-height: 18px;
+      text-align: center;
+    }
+
+    .footNote {
+      width: 80%
+    }
+
+    .footerTable .socialLinks {
+      width: 100%;
+    }
+  </style>
+  <style>
+    /* Responsive CSS */
+
+    @media screen and (min-width : 801px) {
+      .img-picto {
+        max-width: 40px;
+      }
+
+    }
+
+    @media screen and (max-width : 800px) {
+
+      .img-picto {
+        max-width: 40px;
+
+
+      }
+
+      /* General table */
+      table {
+        width: 100%;
+      }
+
+
+      td.leftColumn,
+      td.rightColumn,
+      td.mobileColumn {
+        display: none !important;
+        max-height: none !important;
+        max-height: 0;
+        width: 0;
+
+      }
+
+
+
+      .mobileColumn {
+        display: none !important;
+        max-height: none !important;
+        display: none;
+        font-size: 0;
+        line-height: 0;
+        mso-hide: all;
+        max-height: 0;
+        max-width: 0;
+        width: 0;
+        vertical-align: top;
+        line-height: 0px;
+        font-size: 0px;
+        height: 0px;
+        margin: 0;
+        padding: 0;
+        mso-hide: all;
+        max-height: 0;
+        width: 0;
+      }
+
+      td.centerColumn,
+      td.centerColumn img.mainImage {
+        width: 100%;
+      }
+
+
+      /* Header table */
+      .headerTable td {
+        width: 33%;
+      }
+
+      .headerTable .logo {
+        text-align: center;
+      }
+
+      /* Links table */
+      .headerLinks,
+      .headerLinks tbody,
+      .headerLinks tr,
+      .headerLinks td {
+        display: block;
+
+      }
+
+      .headerLinks td {
+        width: 50% !important;
+        float: left;
+      }
+
+      .headerLinks td.spacer {
+        display: none;
+      }
+
+      .headerLinks {
+        width: 100% !important
+      }
+
+      /* Main content table */
+      .mainContentTable img {
+        display: block;
+        height: auto;
+      }
+
+      /* Footer tables */
+      .footerTable .socialLinks {
+        width: 50%;
+      }
+
+      .footerTable .contactTable {
+        width: 75%;
+      }
+    }
+
+    @media screen and(max-width:680px) {
+      .table-centent {
+        margin: -10px 0px 0px 0px !important;
+      }
+    }
+
+    @media screen and (max-width : 414px) {
+      .img-picto {
+        max-width: 40px;
+      }
+
+      .table-centent {
+        margin: -10px 0px 0px 0px !important;
+      }
+
+      .title,
+      .sous-title {
+        font-size: 16px !important;
+      }
+
+      .text-para {
+        font-size: 14px !important;
+      }
+
+      .text {
+        font-size: 12px !important;
+      }
+
+      .btn {
+        width: 180px !important;
+      }
+
+      .footerTable .socialLinks {
+        width: 80%;
+      }
+
+      .footerTable .prefooter {
+        width: 80%
+      }
+
+      .footerTable .paiementsLinks {
+        width: 80%
+      }
+
+      .footerTable .paiementsLinks img {
+        width: 100%
+      }
+
+      .headerLinks {
+        width: 100% !important
+      }
+
+
+      .footerTable .contactTable {
+        width: 90%;
+      }
+
+      .footNote {
+        width: 90%;
+      }
+    }
+  </style>
+  <!--[if mso]>
+<style type="text/css">
+body, table, td, a {font-family: Arial, Helvetica, sans-serif !important;}
+
+.title{font-weight: 900!important;font-family: Arial, Helvetica, sans-serif !important;}
+.text-para{font-weight: 900!important;font-family: Arial, Helvetica, sans-serif !important;}
+</style>
+<![endif]-->
+
+  <!--[if !mso]>
+  <style type="text/css">
+  .title{font-weight: 900!important;font-family: Arial, Helvetica, sans-serif !important;}
+  .text-para{font-weight: 900!important;font-family: Arial, Helvetica, sans-serif !important;}
+  </style>
+  <![endif]-->
+
+  <!--[if gt mso 9]>
+     <style type="text/css" media="all">
+     /* Outlook 2016 Height Fix */
+     table, tr, td {border-collapse: collapse;}
+     tr { font-size:0px; line-height:0px; border-collapse: collapse; }
+     .title{font-weight: 900!important;font-family: Arial, Helvetica, sans-serif !important;}
+     .text-para{font-weight: 900!important;font-family: Arial, Helvetica, sans-serif !important;}
+       </style>
+     <![endif]-->
+</head>
+
+<body>
+  <!-- Header -->
+  <table class="headerTable" width="800px" margin="auto" align="center">
+    <tr>
+      <td class="logo-picto" align="left" width="33%">
+        <table class="img-pictoLinks" align="left" width="33%" style="width:33%">
+          <tbody>
+            <tr>
+              <td align="left">
+                <a href="https://www.loro.ch/de/spiel-vernuenftig/tipps" target="_blank" title="Header Logo"><img
+                    alt="Header logo" class="center img-picto" border="0" height="auto"
+                    src="https://astrodev-sae.github.io/swiss-media/picto.png"
+                    style="max-width:40px;margin-bottom:10px;margin-right:15px;" width="40" /></a>
+              </td>
+              <td class="socialicon" align="left">
+                <img alt="Header logo" class="center img-picto" border="0" height="auto"
+                  src="https://astrodev-sae.github.io/swiss-media/18.png" style="max-width:40px; margin-bottom:10px"
+                  width="40" />
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </td>
+      <td class="logo" align="center" width="33%">
+        <a href="https://jeux.loro.ch?lang=de_CH" target="_blank" title="Header Logo"><img alt="Header logo"
+            class="center " border="0" height="auto"
+            src="http://www.markette.ch/Loterie-romande/swissloto/enorme-jackpot-11-01-21/common_images/loro-logo.png"
+            style="max-width:73px;" width="73" /></a>
+      </td>
+
+      <td align="right" width="33%">
+        <a href="https://jeux.loro.ch/account/login?lang=de_CH" target="_blank" title="Header login"><img
+            alt="Header login" class="right" border="0" height="auto"
+            src="http://www.markette.ch/Loterie-romande/swissloto/enorme-jackpot-11-01-21/common_images/login.png"
+            style="max-width:137px;" width="137" /></a>
+      </td>
+    </tr>
+    <tr style="height: 20px" height="20px">
+      <td colspan="3" height="20px"></td>
+    </tr>
+  </table>
+  <!-- Links -->
+  <table width="800px" margin="auto" align="center">
+    <tr>
+      <td class="firstColumn"></td>
+      <td class="centerColumn">
+        <table class="headerLinks" style="width:650px;margin:auto;">
+          <tr>
+            <td>
+              <a href="https://jeux.loro.ch/games/euromillions/standard?lang=de_CH" target="_blank" class="headerLink"
+                title="Ziehungsspiele">Ziehungsspiele</a>
+            </td>
+            <td class="spacer">-</td>
+            <td>
+              <a href="https://jeux.loro.ch/iwg?lang=de_CH" target="_blank" class="headerLink"
+                title="Instant-spiele">Instant-spiele</a>
+            </td>
+            <td class="spacer">-</td>
+            <td>
+              <a href="https://jeux.loro.ch/horses/races?lang=de_CH" target="_blank" class="headerLink"
+                title="Pferdewetten">Pferdewetten</a>
+            </td>
+            <td class="spacer">-</td>
+            <td>
+              <a href="https://jeux.loro.ch/sports/?lang=de_CH" target="_blank" class="headerLink"
+                title="Sportwetten">Sportwetten</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td class="rightColumn" style="width:0;"></td>
+    </tr>
+  </table>
+  <!-- Content table -->
+  <table class="mainContentTable" width="800px" margin="auto" cellpadding="0" cellspacing="0" align="center" border="0"
+    bgcolor="#f7f4f2" style="margin: auto;margin-top:20px;padding: 0; background-color:#f7f4f2;">
+    <tr>
+      <td class="leftColumn" style="width: 0px; padding: 0; margin: 0;">
+        <!-- content Left here -->
+      </td>
+      <td class="centerColumn" style="width: 100%; padding: 0; margin: 0;padding: 0; margin: 0;">
+        <!-- content center here -->
+        <table cellpadding="0" cellspacing="0" align="center" width="800" style="width:100%;height:auto;margin:0;
+          padding:0;display:block;" border="0">
+          <tr>
+            <td>
+              <img src="https://astrodev-sae.github.io/swiss-media/loex/all/relance-all.jpg" width="800"
+                style="width:100%;height:auto;display:block" alt="background">
+            </td>
+          </tr>
+        </table>
+        <table cellpadding="0" border="0" cellspacing="0" align="center" width="800"
+          style="width:100%;height:auto;background-image: linear-gradient(#f3d811,#f3d811);padding: 0px;margin:-40px  0px 0px 0px;"
+          class="table-centent" bgColor="#f3d811">
+          <tr>
+            <td>
+              <center>
+                <div class="title"
+                  style="text-align: center;font-size:25px;color: #0064a9;font-weight: 900;font-family: Geneva, sans-serif;">
+                  PROMOTION
+                </div>
+              </center>
+              <center>
+                <div class="sous-title"
+                  style="text-align: center;font-size:20px;color: #ffffff;font-weight: 900;font-family:'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;">
+                  vom 17.bls 29.Januar 2022.
+                </div>
+              </center>
+            </td>
+          </tr>
+          <tr>
+            <td height="20" style="height: 15px;"></td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <div class="text-para"
+                  style="font-size:22px;text-align: center;color: #0064a9;font-weight: 900;font-family: Arial, Helvetica, sans-serif;font-style: italic">
+                  * Spielen Sie um teilzunehmen<br>
+                  einen LOTO EXPRESS-Einsatz mit<br>
+                  BOOST für 3 Ziehungen
+                </div>
+              </center>
+            </td>
+          </tr>
+          <tr>
+            <td height="20" style="height: 20px;"></td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <a href="https://www.tagindex.net/" style="text-decoration: none;" target="_blank">
+                  <img
+                    src="https://user-images.githubusercontent.com/57986793/148460242-43a1e973-3853-4cc7-bfa7-485948dc0264.png"
+                    alt="botton " width="260" class="btn" style="width: 260px;height: auto;display:block"
+                    title="SPIELEN">
+                </a>
+              </center>
+            </td>
+          </tr>
+          <tr>
+            <td height="20" style="height: 15px;"></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="text"
+                style="text-align: center;font-size: 18px;color: #0064a9;font-weight: 600;font-family: Arial, Helvetica, sans-serif!important;">
+                * Infos und Teilnahmebedingungen <a href="https://google.com"
+                  style="text-decoration: underline 2px #0064a9!important;color: #0064a9;" target="_blank">hier</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td height="20" style="height: 20px;"></td>
+          </tr>
+        </table>
+      </td>
+      <td class="rightColumn" style="width: 0px; padding: 0; margin: 0;">
+        <!-- content right here -->
+      </td>
+    </tr>
+  </table>
+  <!-- Footer tables -->
+  <table class="footerTable" width="800px" margin="auto" bgcolor="#eeeeee" align="center">
+    <tr style="height: 50px" height="50px">
+      <td colspan="3" height="50px"></td>
+    </tr>
+    <tr>
+      <td class="leftColumn"></td>
+      <td class="centerColumn">
+
+        <table align="center">
+          <tr>
+            <td style="text-align: center;">
+              <a style="margin: auto;display:block" href="https://jeux.loro.ch/app_mobile?lang=de_CH" target="_blank"
+                title="Prefooter mobile"><img alt="Prefooter mobile" border="0" height="auto"
+                  src="https://astrodev-sae.github.io/swiss-media/4-newsletters/all/apple-store-nl.png"
+                  style="width: 300px;margin: auto;display:block" width="300"></a>
+            </td>
+
+          </tr>
+        </table>
+      </td>
+      <td class="rightColumn"></td>
+    </tr>
+  </table>
+  <!-- paiements -->
+  <table class="footerTable" width="800px" margin="auto" bgcolor="#eeeeee" align="center">
+    <tr style="height: 20px" height="20px">
+      <td colspan="3" height="20px"></td>
+    </tr>
+    <tr>
+      <td class="leftColumn"></td>
+      <td class="centerColumn">
+        <table class="paiementsLinks" align="center">
+          <tbody>
+            <tr>
+              <td class="spaiementicon" align="center">
+                <p class="h2-center"
+                  style="color:#484848;  font-family:'Lato', 'Trebuchet MS', Arial, sans-serif;  font-size:14px; line-height:1;text-align: center;font-weight: 500;margin:0 0 10px 0;text-transform: uppercase;">
+                  GESICHERTE AUSZAHLUNG
+                </p>
+                <a href="https://jeux.loro.ch/wallet/deposit?lang=de_CH" target="_blank" title="Footer Paiement"><img
+                    alt="Footer Paiemen" class="imgfooter imgfooterPaiemen"
+                    src="https://astrodev-sae.github.io/swiss-media/paiements.png" width="400"></a>
+              </td>
+            </tr>
+            <tr style="height: 20px" height="20px">
+              <td colspan="3" height="20px"></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td class="rightColumn"></td>
+    </tr>
+
+  </table>
+  <!-- Social links -->
+  <table class="footerTable" width="800px" margin="auto" bgcolor="#eeeeee" align="center">
+    <tr>
+      <td class="leftColumn"></td>
+      <td class="centerColumn">
+
+        <table class="socialLinks" align="center">
+          <tbody>
+            <tr>
+              <td align="center" class="mobileColumn">
+                <img alt="" class="mobileColumn" height="39" src="https://astrodev-sae.github.io/swiss-media/line.png"
+                  width="176">
+              </td>
+              <td class="socialicon" align="center">
+                <a href="https://www.facebook.com/loterieromande" target="_blank" title="Footer Facebook"><img
+                    alt="Footer Facebook" class="imgfooter" height="37"
+                    src="https://astrodev-sae.github.io/swiss-media/facebook.png" width="37"></a>
+              </td>
+              <td class="socialicon" align="center">
+                <a href="https://www.instagram.com/loterieromande/" target="_blank" title="Footer Instagram"><img
+                    alt="Footer Instagram" class="imgfooter" height="37"
+                    src="https://astrodev-sae.github.io/swiss-media/instagram.png" width="38"></a>
+              </td>
+              <td class="socialicon" align="center">
+                <a href="https://twitter.com/LoterieRomande" target="_blank" title="Footer Twitter"><img
+                    alt="Footer Twitter" class="imgfooter" height="37" title=""
+                    src="https://astrodev-sae.github.io/swiss-media/twitter.png" width="37"></a>
+              </td>
+              <td class="socialicon" align="center">
+                <a href="https://www.youtube.com/user/LoterieRomande" target="_blank" title="Footer Youtube"><img
+                    alt="Footer Youtube" class="imgfooter" height="37" title="Youtube"
+                    src="https://astrodev-sae.github.io/swiss-media/youtube.png" width="37"></a>
+              </td>
+              <td class="socialicon" align="center">
+                <a href="https://www.linkedin.com/company/loterie-romande" target="_blank" title="Footer Linkedin"><img
+                    alt="Footer Linkedin" class="imgfooter" height="37" title="Linkedin"
+                    src="https://astrodev-sae.github.io/swiss-media/linkedin.png" width="37"></a>
+              </td>
+              <td align="center ">
+                <img alt="" class="mobileColumn" height="39" src="https://astrodev-sae.github.io/swiss-media/line.png"
+                  width="176">
+              </td>
+            </tr>
+            <tr style="height: 20px" height="20px">
+              <td colspan="3" height="20px"></td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </td>
+      <td class="rightColumn"></td>
+
+    </tr>
+  </table>
+  <!-- Désinscription -->
+  <table class="footerTable" width="800px" margin="auto" bgcolor="#eeeeee" align="center">
+    <tr>
+      <td class="leftColumn"></td>
+      <td class="centerColumn">
+
+        <table class="footNote" align="center">
+          <tbody>
+            <tr>
+              <td class="footNoteLink" align="center">
+                <a href="~PROBE(0)~"
+                  style="text-transform: uppercase; color: #4a4a4a; text-decoration: underline;font-size: 11px;"
+                  target="_blank" title="Consultez en ligne">ONLINE VERSION</a>
+              </td>
+              <td class="footNoteLink" align="center">
+                <a href="https://jeux.loro.ch/faq?lang=de_CH"
+                  style="text-transform: uppercase; color: #4a4a4a; text-decoration: underline;font-size: 11px;"
+                  target="_blank" title="nous contacter">KONTAKTIEREN SIE UNE</a>
+              </td>
+              <td class="footNoteLink" align="center">
+                <a href="#UNSUBSCRIBE#"
+                  style="text-transform: uppercase; color: #4a4a4a; text-decoration: underline;font-size: 11px;"
+                  target="_blank" title="Unsubscribe">ABBESTELLEN</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td class="rightColumn"></td>
+    </tr>
+    <tr style="height: 30px" height="30px">
+      <td colspan="3" height="30px"></td>
+    </tr>
+  </table>
+</body>
+
+</html>
